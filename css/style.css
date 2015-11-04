@@ -1,0 +1,43 @@
+.mainDiv {
+  width: 25%;
+  margin-left: 80px;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+
+.title {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.stuff {
+  background-color: #FFF380;
+  padding: 20px 60px 20px 70px;
+}
+
+.stuff ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stuff ul button {
+  float: right;
+}
+
+.bought {
+  background-color: #B1FB17;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-top: 5px;
+}
+
+.checkmark {
+  font-size: 40px;
+  margin-left: -60px;
+  margin-top: 1px;
+  float: left;
+}
