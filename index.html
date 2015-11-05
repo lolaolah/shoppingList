@@ -3,10 +3,12 @@
     <head>
     	<meta charset="UTF-8">
     	<title>Shopping List</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     	<link rel="stylesheet" href="css/style.css">
-    	<script src="js/jquery-2.1-1.min.js"></script>
-    	<script src="js/script.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/app.js"></script>
+
 
     </head>
 
@@ -14,14 +16,26 @@
   <div class="mainDiv">
     <h1 class="title">Shopping list</h1>
     <div class="buy stuff">
-      <input type="text" placeholder="add item and press enter"/>
-      <ul>
+
+
+      <div class="enter_shopping">
+        <form id="shopping_form" action="#" method="POST">
+          <input id="shopping_description" name="shopping_description" value="add item &amp press enter" size="25" type="text" />
+          <input id="add_shopping" type="submit" value="Add" />
+        </form>
+        <div class="shopping_list"></div>
+      </div>
+
+<!--
+        <ul id="BuyList">
           <li>apples <button>x</button><button>✓</button></li>
           <li>beans <button>x</button><button>✓</button></li>
           <li>kale <button>x</button><button>✓</button></li>
           <li>pumpkins <button>x</button><button>✓</button></li>
           <li>chocolate <button>x</button><button>✓</button></li>
-      </ul>
+          </ul>
+        -->
+
     </div>
     <div class="bought stuff">
       <div class="checkmark fa fa-check-circle-o"></div>
