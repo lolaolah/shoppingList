@@ -9,14 +9,22 @@ $(document).ready( function () {
     e.preventDefault();
     var shoppingDescription = $('#shopping_description').val();
 
-    $('.shopping_list').prepend('<div class="shopping">'
-        + '<div>'
-            + '<input class="check_shopping" name="check_shopping" type="checkbox" />'
-        + '</div>'
+    $('.shopping_list').append('<div class="shopping" >'
+
         + '<div class="shopping_description">'
             + shoppingDescription
         + '</div>'
+
+        + '<div>'
+            + '<input class="check_shopping" name="check_shopping" type="checkbox" />'
+        + '</div>'
+
+        + '<div>'
+            + '<input class="delete_shopping" name="delete_shopping" type="checkbox" />'
+        + '</div>'
+
     + '</div>');
+
     $('#shopping_form')[0].reset();
   });
 });
